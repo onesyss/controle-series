@@ -69,6 +69,6 @@ DB_CONNECTION=sqlite
 
 - Por padrão, ele irá executar a aplicação em `localhost:8000/series`, abra o navegador e digite o caminho.
 
-<h2 id="demo">Demo da aplicação</h2>
+<!-- <h2 id="demo">Demo da aplicação</h2>
  
- - <a href="https://www.tagsolution.com.br/teste_masterix/public">Veja aqui o demo da aplicação</a>
+ - <a href="https://www.tagsolution.com.br/teste_masterix/public">Veja aqui o demo da aplicação</a> -->
