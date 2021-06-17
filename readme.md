@@ -38,17 +38,17 @@ de temporadas e episodios.</p>
 
 - A versão atual do composer está encontrando alguns problemas, no caso usei o ilustrado a baixo.
 
-Como posso corrigir esse problema?
-Vá em: 
+- Como posso corrigir esse problema?
+- Vá em: 
 
-vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php
-Encontre esta linha e comente-a:
+`vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php`
+-Encontre esta linha e comente-a:
 
-$packages = json_decode($this->files->get($path), true);
-Adicione duas novas linhas após a linha comentada acima:
+`$packages = json_decode($this->files->get($path), true);`
+- Adicione duas novas linhas após a linha comentada acima:
 
-$installed = json_decode($this->files->get($path), true);
-$packages = $installed['packages'] ?? $installed;
+`$installed = json_decode($this->files->get($path), true);`
+`$packages = $installed['packages'] ?? $installed;`
 
 - Altere o arquivo `.env.example` para somente `.env` e abra ele,
   crie um banco de dados vazio e o configure neste bloco:
